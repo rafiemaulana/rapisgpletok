@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrasi Sistem Jaringan XII TKJ D</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366;
+            background-image: url(bckgrnd.jpg);
+            background-size: 100%;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0055aa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;  
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+            background-color: white;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        img {
+            border-radius: 500px;
+            border: 4px solid skyblue;
+            object-fit: cover;
+            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Administrasi Sistem Jaringan XII TKJ D</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">Beranda</a>
+        <a href="#" onclick="showSection('identitas')">Identitas</a>
+        <a href="#" onclick="showSection('cpanel')">Control Panel Hosting</a>
+        <a href="#" onclick="showSection('pengantar')">Pengantar Hosting</a>
+    </nav>
+
+    <section id="home" class="active">
+        <h2>Welcome to My Personal Website</h2>
+        <p>Website ini dibuat untuk memenuhi tugas mata pelajaran <strong>Administrasi Sistem Jaringan</strong> kelas XII TKJ D.</p>
+    </section>
+
+    <section id="identitas">
+        <h2>Identitas Pribadi</h2>
+        <div class="container">
+        <img src="icikiwir.jpg" alt="Foto Saya">
+        </div>
+        <ul>
+            <li><strong>Nama:</strong> Rafie Maulana Rasyid</li>
+            <li><strong>Alamat:</strong> JL.M.kahfi 2 Gg.H.Misan no 17 rt01/003 cipedak,jagakarsa,jakarta selatan</li>
+            <li><strong>Cita-cita:</strong> Menjadi Orang Sukses Yang Bisa Membahagiakan Kedua Orang Tua</li>
+            <li><strong>Hobi:</strong> Bermain game, Mendengarkan Musik</li>
+        </ul>
+    </section>
+
+    <section id="cpanel">
+        <h2>Rangkuman Control Panel Hosting</h2>
+        <p>Panel kontrol hosting web adalah antarmuka pengguna grafis (GUI) yang disediakan oleh host web yang memungkinkan pengguna untuk mengelola server dan situs web mereka melalui platform berbasis web, bukan antarmuka baris perintah. Panel ini menyederhanakan tugas-tugas seperti mengelola domain, email, berkas, basis data, menginstal aplikasi, dan memantau sumber daya server seperti penyimpanan dan RAM. Contoh populer termasuk cPanel, Plesk, dan aaPanel.</p>
+
+        <h3>Fitur Umum cPanel:</h3>
+        <ul>
+            <li>File Manager</li>
+            <li>Database MySQL</li>
+            <li>Email Account Management</li>
+            <li>Softaculous Installer</li>
+        </ul>
+
+        <img src="cpanel.jpg" width="500px" height="500px" alt="Tampilan CPanel">
+    </section>
+
+    <section id="pengantar">
+        <h2>Rangkuman Pengantar Hosting</h2>
+        <p><strong>Hosting</strong> adalah layanan penyewaan ruang dan sumber daya pada server yang memungkinkan Anda menyimpan semua file, data, dan aplikasi website agar dapat diakses oleh pengguna lain melalui internet. Layanan ini memastikan website Anda online 24 jam sehari, menyajikan konten berupa gambar, video, teks, dan kode, serta sering kali menyediakan dukungan keamanan dan performa. </p>
+
+        <h3>Jenis-jenis Hosting:</h3>
+        <ul>
+            <li>Shared Hosting</li>
+            <li>VPS (Virtual Private Server)</li>
+            <li>Cloud Hosting</li>
+            <li>Dedicated Server</li>
+        </ul>
+
+        <img src="hosting.jpg" alt="Jenis Hosting">
+    </section>
+
+    <footer>
+        &copy; 2025 - Website Pribadi XII TKJ D
+    </footer>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(id).classList.add("active");
+        }
+    </script>
+</body>
+</html>
+
+
+
